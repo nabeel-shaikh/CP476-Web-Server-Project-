@@ -66,17 +66,19 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
-
   /* Style for the team section */
 #team {
   background-color: #f9f9f9;
   padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .members {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .members ul {
@@ -88,12 +90,15 @@ body {
 }
 
 .members li {
-  font-size: 24px;
-  margin: 10px;
+  font-size: 28px;
+  margin: 20px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
+
+  
+
 
   /* Project section */
   
