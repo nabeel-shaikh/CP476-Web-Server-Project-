@@ -15,22 +15,23 @@
 
     ### STUDENT ###
     // add a student
-    function addStudent($conn) {
-        
+    function addStudent() {
+        global $conn;
     }
 
     // update student info
-    function updateStudent($conn) {
-        
+    function updateStudent() {
+        global $conn;
     }
 
     // remove student
-    function removeStudent($conn) {
+    function removeStudent() {
         
     }
 
     // print all students
-    function printNameTableRecords($conn) {
+    function printNameTableRecords() {
+        global $conn;
         $sql = "SELECT * FROM name";
         $result = $conn->query($sql);
         
@@ -46,22 +47,23 @@
 
     ### COURSE ###
     // register a students to a course
-    function addCourseRecord($conn) {
-        
+    function addCourseRecord() {
+        global $conn;
     }
 
     // update course record in database
-    function updateCourseRecord($conn) {
-        
+    function updateCourseRecord() {
+        global $conn;
     }
 
     // remove course record from database
-    function removeCourseRecord($conn) {
-        
+    function removeCourseRecord() {
+        global $conn;
     }
 
     // print all course records
-    function printCourseTableRecords($conn) {
+    function printCourseTableRecords() {
+        global $conn;
         $sql = "SELECT * FROM course";
         $result = $conn->query($sql);
         
@@ -77,15 +79,15 @@
 
     ### FINAL GRADE ###
     // show student final grade
-    function studentfinalGrade($conn) {
-        
+    function studentfinalGrade() {
+        global $conn;
     }
 
     // show all student final grades
-    function printAllStudentFinalGrades($conn) {
-        
+    function printAllStudentFinalGrades() {
+        global $conn;
     }
 
     // Close the connection
-    $conn->close();
+    //$conn->close();
 ?>
