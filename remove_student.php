@@ -4,9 +4,6 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $studentID = $_POST['student_id'];
 
-        removeStudent($studentID);
-        header('Location: index.php'); //redirect
-
-        exit;
+        echo removeStudent($studentID);
     }
 ?>

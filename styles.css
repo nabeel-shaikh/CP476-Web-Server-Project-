@@ -5,6 +5,10 @@ header {
   padding: 20px;
 }
 
+body {
+  margin: 0 0 5% 0;
+}
+
 /* Center the header text */
 h1.text-center {
   text-align: center;
@@ -30,11 +34,13 @@ li {
 
 /* Style the forms */
 form {
-  margin: 20px auto;
+  min-width: 400px;
   max-width: 600px;
   padding: 20px;
+  text-align: center;
   background-color: #f7f7f7;
   border-radius: 10px;
+  align-items: center;
 }
 
 /* Style the form labels */
@@ -79,26 +85,65 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-  .members {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px; /* add margin to shift to the right */
-  }
+
+.members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px; /* add margin to shift to the right */
+}
   
-  .members ul {
+.members ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  }
+}
   
-  .members li {
+.members li {
   font-size: 28px;
   margin: 20px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  }
+}
   
+.forms {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.forms>div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+}
+
+table {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius:10px 10px 0 0;
+  margin: 0;
+}
+table th, table td {
+  padding: 0.25em 0.5em;
+  text-align: left;
+}
+
+table td {
+  background-color: #eee;
+}
+table th {
+  background-color: #007bff;
+  border-radius:10px 10px 0 0;
+  color: #fff;
+}

@@ -9,9 +9,6 @@
         $test3 = $_POST['test_3'];
         $final = $_POST['final'];
 
-        updateCourse($studentID, $courseCode, $test1, $test2, $test3, $final);
-        header('Location: index.php'); //redirect
-
-        exit;
+        echo updateCourse($studentID, $courseCode, $test1, $test2, $test3, $final);
     }
 ?>

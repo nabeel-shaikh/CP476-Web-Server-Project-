@@ -8,7 +8,6 @@
             exit;
         }
 
-    echo "<h1>Course Table Records</h1>";
     echo "<table><tr><th>Student ID</th><th>Student Name</th><th>Course Code</th><th>Final</th></tr><tbody>";
 
     foreach ($rows as $row){
