@@ -1,90 +1,84 @@
-/* Global styles */
-h1{
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Center the header text */
+h1.text-center {
   text-align: center;
 }
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  }
-  
-  .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
-  }
-  
-  ul {
+
+/* Style the team section */
+section#intro {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+/* Style the member list */
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
-  
-  a {
-  color: #333;
-  text-decoration: none;
-  }
-  
-  .btn {
-  display: inline-block;
-  padding: 10px 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the forms */
+form {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style the form inputs */
+input[type="text"] {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the form buttons */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  font-size: 16px;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-  background-color: #666;
-  }
-  
-  /* Introduction and Team section */
-  
-  
-  #intro {
-  background-color: #f2f2f2;
-  padding: 50px 0;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Style the headings */
+h1 {
+  margin: 20px 0;
   text-align: center;
-  }
-  
-  #intro h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  }
-  
-  #intro p {
-  font-size: 24px;
-  margin-bottom: 40px;
-  }
-  
-  #intro ul {
-  margin-left: 40px;
-  }
-  
-  #intro li {
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
-  
-  #team {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  
-  #team h2 {
-  font-size: 36px;
+}
+
+h2 {
   margin-bottom: 20px;
   text-align: center;
-  }
-  
+}
   .members {
     display: flex;
     flex-direction: column;
@@ -108,28 +102,3 @@ body {
   border-radius: 10px;
   }
   
-  /* Project section */
-  
-  #project {
-  padding: 100px 0;
-  }
-  
-  #project h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  text-align: center;
-  }
-  
-  #project p {
-  font-size: 24px;
-  margin-bottom: 40px;
-  }
-  
-  #project ul {
-  margin-left: 40px;
-  }
-  
-  #project li {
-  font-size: 24px;
-  margin-bottom: 10px;
-  }
